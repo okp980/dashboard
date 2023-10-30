@@ -80,8 +80,8 @@ const Dashboard = (props: Props) => {
         </div>
         <div className="w-full">
           <DashboardCard
-            title="Total Shops"
-            result={analytics?.data.totalShops}
+            title="Today's Orders"
+            result={analytics?.data.todaysRevenue}
           />
         </div>
       </div>

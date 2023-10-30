@@ -57,7 +57,7 @@ const RecentOrders = ({ title, orders }: Props) => {
       align: "center",
       width: 150,
       render: (status: OrderStatus) => (
-        <Badge text={status} color={StatusColor(status)} />
+        <Badge text={status.replace(/-/g, " ")} color={StatusColor(status)} />
       ),
     },
   ]
